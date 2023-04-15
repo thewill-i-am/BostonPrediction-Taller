@@ -1,0 +1,19 @@
+#
+# Author: Lasse Collin
+#
+# This file has been put into the public domain.
+# You can do whatever you want with this file.
+#
+
+prefix=/home/william/claseRodrigoExposicion/venv
+exec_prefix=/home/william/claseRodrigoExposicion/venv
+libdir=/home/william/claseRodrigoExposicion/venv/lib
+includedir=/home/william/claseRodrigoExposicion/venv/include
+
+Name: liblzma
+Description: General purpose data compression library
+URL: https://tukaani.org/xz/
+Version: 5.2.10
+Cflags: -I${includedir}
+Libs: -L${libdir} -llzma
+Libs.private: -pthread -lpthread
